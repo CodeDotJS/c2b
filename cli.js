@@ -173,8 +173,7 @@ const currency = ['USD',
 	'VND',
 	'XOF',
 	'YER',
-	'ZMK'
-];
+	'ZMK'];
 
 const cur = currency[Math.floor(Math.random() * currency.length)].toLowerCase();
 
@@ -209,7 +208,7 @@ dns.lookup('google.com', err => {
 		spinner.start();
 		got(url).then(res => {
 			const rates = res.body;
-			logUpdate(`\n ⏩ ${rates.split('138%"><b>')[1].split('</b>')[0]}\n`);
+			logUpdate(`\n ⏩ ${rates.split('<div class="J7UKTe">')[1].split('</div>')[0]}\n`);
 			spinner.stop();
 		}).catch(err => {
 			if (err) {
