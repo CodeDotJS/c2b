@@ -22,7 +22,7 @@ $ npm install --global c2b
 ## Usage
 
 ```
-  Usage : c2b
+  Usage : c2b --help
         : c2b <amount> <currency>
 
   Help  :
